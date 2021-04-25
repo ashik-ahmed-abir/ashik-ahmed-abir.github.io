@@ -1,0 +1,71 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #1ebff0;
+  background-image: url(./jpeg/backk.jpg);
+  background-repeat: no-repeat;
+  background-position: top;
+  background-attachment: fixed;
+  /* background-size: 100% 38.87%; */
+  background-size: 100%;
+}
+<style > a.home:link {
+  color: #e6d5d5;
+}
+a.home:visited {
+  color: #0000ff;
+}
+a.home:hover {
+  color: aquamarine;
+}
+
+a.about:link {
+  color: #ff0000;
+}
+a.about:visited {
+  color: #0000ff;
+}
+a.about:hover {
+  color: aquamarine;
+}
+
+a.contact:link {
+  color: #ff0000;
+}
+a.contact:visited {
+  color: #0000ff;
+}
+a.contact:hover {
+  color: aquamarine;
+}
+
+a {
+  font-size: 25px;
+  color: #010114;
+  background-color: rgba(135, 206, 235, 0);
+  display: inline-block;
+  padding: 3px;
+  border-right: 6px solid black;
+}
+</style>
+
+.welcome {
+  font-family: Georgia, serif;
+  font-size: 50px;
+  text-shadow: 2px 2px 5px rgb(244, 246, 247);
+}
+
+#welcome {
+  font-family: Georgia, serif;
+  font-size: 30px;
+  text-shadow: 2px 2px 5px rgb(229, 234, 235);
+}
+.name {
+  font-family: Ubuntu, sans-serif;
+  font-size: 50px;
+  text-shadow: 2px 2px 5px rgb(242, 247, 248);
+  border-bottom: 2px solid black;
+}

@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #2d2d2d;
+}
+
+section {
+  display: inline-block;
+  background-color: white;
+  margin: 2rem;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  width: 400px;
+}
+ 
+.name {
+    font-size: 2rem;
+}
+.add {
+    font-size: 1rem;
+}
+.text {
+    font-size: 0.8rem;
+}
