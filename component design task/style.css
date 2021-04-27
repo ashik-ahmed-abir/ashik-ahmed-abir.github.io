@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #f3f4f6;
+  font-family: "Roboto", sans-serif;
+}
+
+table {
+  background-color: white;
+  border-collapse: collapse;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 0.5rem;
+  
+ 
+}
+#box td,
+#box th {
+  vertical-align: middle;
+  padding: 8px 16px;
+}
+#box th {
+  font-size: 0.8rem;
+  text-align: left;
+  background-color: #f9fafb;
+  color: #6b7280;
+  font-weight: normal;
+}
+#box td {
+  font-size: 0.8rem;
+}
+#box tr {
+  border: none;
+  border-bottom: 1px solid #e5e7eb;
+  border-right: 1px solid #e5e7eb;
+  border-left: 1px solid #e5e7eb;
+}
+
+#sub {
+  font-size: 0.7rem;
+  color: #6b7d88;
+}
+
+#active {
+  color: #065f46;
+  font-size: 0.7rem;
+  background-color: #d1fae5;
+  border-radius: 0.9rem;
+  padding: 0.25rem 0.3rem;
+  display: inline-block;
+  font-weight: 400;
+}
+
+.mail {
+  text-decoration: none;
+  font-size: 0.7rem;
+  color: #6b7d88;
+}
+
+#role {
+  font-size: 0.8rem;
+  color: #6b7d88;
+}
+
+#edit {
+  text-decoration: none;
+  font-size: 0.8rem;
+}
+img {
+  width: 28px;
+  border-radius: 50%;
+  object-fit: cover;
+  float: left;
+  margin-right: 0.8rem;
+}

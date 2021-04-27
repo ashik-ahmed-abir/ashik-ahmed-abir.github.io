@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+    background-color: #F4F5F7;
+    font-family: 'Roboto', sans-serif;
+}
+
+div {
+    background-color: #fff;
+    
+    margin: 1rem;
+    border-radius: 0.5rem;
+    padding: 1rem;
+}
+
+#update {
+    font-size: 1.5rem;
+    padding-bottom: 1rem;
+}
+#sub {
+    font-size: 0.8rem;
+    
+    padding-bottom: 1rem;
+    color: #B4B5B7;
+}
+
+#mail {
+    font-size: 0.8rem;
+    padding: 0.2rem;
+    
+}
+#submit {
+    color: white;
+    padding: 0.3rem;
+    background-color: blue;
+    border: 1px ;
+    border-radius: 0.2rem;
+}
