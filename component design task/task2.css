@@ -60,6 +60,9 @@ div {
     border: 1px solid rgba(0, 0, 0, 0.3);
     padding-bottom: 0.4rem;
 }
+#mail:hover {
+    border-color: coral;
+}
 #pass {
     font-size: 0.8rem;
     padding-top: 1rem;
@@ -75,6 +78,9 @@ div {
     border: 1px solid rgba(0, 0, 0, 0.3);
     padding-bottom: 0.4rem;
 }
+#password:hover {
+    border-color: coral;
+}
 #remember {
     font-size: 0.7rem;
     display: inline-block;
@@ -89,7 +95,7 @@ div {
     
 }
 #forgot:hover {
-    color: black;
+    color: coral;
 }
 #for {
     display: inline-block;
