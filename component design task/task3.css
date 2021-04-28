@@ -71,3 +71,9 @@ a {
     display: inline-block;
     font-size: 0.9rem;
 }
+#accept:hover {
+    background-color: black;
+}
+#decline:hover {
+    background-color: rgb(78, 162, 241);
+}
