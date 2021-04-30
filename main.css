@@ -1,47 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;700&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   text-decoration: none;
 }
+
 body {
-  background-image: url(./jpeg/cover.jpg);
-
+  font-family: "Source Sans Pro", sans-serif;
 }
-     /* navigation */
 
-     .nav {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      
-    }
-    
-    .logotxt {
-      display: inline;
-      vertical-align: middle;
-      margin-left: 1rem;
-      color: #fff;
-      letter-spacing: 0.2rem;
-    }
-    .logo {
-      width: 3vw;
-      vertical-align: middle;
-      margin-left: 5rem;
-    }
-    
-    .navlinks a {
-      font-size: 1.3rem;
-      vertical-align: middle;
-      padding: 0.5rem 1rem;
-      border-radius: 40px;
-      color: #000000;
-      text-decoration: none;
-      font-weight: bold;
-      margin-right: 1rem;
-      background-color: #fff;
-      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    }
-    a.contact {
-      margin-right: 5rem;
-    }
+/* navigation */
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  
+}
+
+.logotxt {
+  font-size: 3.5rem;
+  display: inline;
+  vertical-align: middle;
+  margin-left: 1rem;
+  color: rgb(0, 0, 0);
+  letter-spacing: 0.2rem;
+}
+.ab {
+  color: crimson;
+}
+.logo {
+  width: 3.3vw;
+  vertical-align: middle;
+  margin-left: 5rem;
+}
+
+.navlinks a {
+  font-size: 1.6rem;
+  vertical-align: middle;
+  padding: 0.5rem 1rem;
+  border-radius: 40px;
+  color: #000000;
+  text-decoration: none;
+  font-weight: bold;
+  margin-right: 1rem;
+  background-color: #fff;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+a.contact {
+  margin-right: 5rem;
+}
+.navlinks a:hover {
+  color: crimson;
+}
+
+/* home */
+
+div.home {
+  background-image: url(./jpeg/backkk.jpg);
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+}
+div.home-content {
+  color: #fff;
+  margin-left: 5rem;
+  margin-top: 11rem;
+  letter-spacing: 0.2rem;
+}
+.home-content .text-1 {
+  color: rgb(0, 0, 0);
+  font-size: 4rem;
+  
+}
+.home-content .text-2 {
+  color: rgb(0, 0, 0);
+  font-size: 5.5rem;
+  padding-bottom: 2rem;
+}
+.home-content .text-3 {
+  color: rgb(0, 0, 0);
+  font-size: 3.3rem;
+}
+.abb {
+  color: rgb(43, 255, 0);
+}
+
+.home-link {
+  display: inline-block;
+  margin-left: 5rem;
+  margin-top: 6rem;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 0.2rem;
+  border-radius: 8rem;
+  box-shadow: 4px 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.home-link a {
+  margin: 0.2rem;
+  vertical-align: middle;
+}
+
+/* About */
+
+div.about {
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+}
