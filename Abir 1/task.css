@@ -1,0 +1,72 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+body {
+  background-color: #F4F5F7;
+}
+img {
+  display: inline-block;
+}
+section {
+  background-color: white;
+  margin: 1rem 1rem 1rem 1rem;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 0.5rem;
+  padding: 1rem 1rem 1rem 1rem;
+}
+.menu .logo {
+  vertical-align: middle;
+  display: inline-block;
+}
+.menu .menu-btn {
+  vertical-align: middle;
+  display: inline-block;
+}
+
+.menu .logo a {
+  color: rgba(0, 0, 0);
+  font-size: 2rem;
+  vertical-align: middle;
+}
+.menu .logo a span {
+  padding-left: 1rem;
+}
+.menu .menu-btn a {
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 1.5rem;
+  padding-left: 1rem;
+}
+.menu .menu-btn a:hover {
+  color: black;
+
+  text-decoration: underline;
+}
+.search {
+  display: inline-block;
+  vertical-align: middle;
+}
+.search .sear {
+    width: 15rem;
+    padding: 0.4rem;
+    border-radius: 0.5rem;
+    margin-right: 1rem;
+}
+.search a {
+  display: inline-block;
+}
+.icon {
+    font-size: 1.5rem;
+    color: rgba(0, 0, 0, 0.6);
+    vertical-align: middle;
+    margin-right: 1rem;
+}
+a img {
+    vertical-align: middle;
+}
+
