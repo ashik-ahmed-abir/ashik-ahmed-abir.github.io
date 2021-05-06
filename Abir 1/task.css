@@ -162,31 +162,28 @@ margin-left: 1rem;
   padding: 0rem 2rem 3rem 2rem;
   font-weight: 700;
 }
+
 .home .second {
   position: absolute;
-  top: 13%;
-  height: 575px;
+  top: 57%;
+  height: 260px;
   width: 500px;
-  margin-left: 35.7rem;
+  margin-left: 1rem;
   border: 1px solid black;
-  
 }
 .second .content-2 {
   position: absolute;
   top: 0%;
   width: 465px;
+  align-items: center;
   margin-left: 2rem;
   color: black;
 }
 .content-2 h2 {
   font-size: 1.5rem;
-  padding: 2rem 2rem 0.8rem 0rem;
+  padding: 2rem 2rem 0.5rem 0rem;
   font-weight: 500;
   letter-spacing: 1px;
-}
-h2 span {
-  color: white;
-  background-color: black;
 }
 .content-2 h1 {
   font-size: 2rem;
@@ -196,48 +193,40 @@ h2 span {
   font-size: 1.35rem;
   font-weight: 400;
 }
-h3 i {
-  font-size: 0.8rem;
-}
-h3 span {
-  font-weight: 700;
-}
-.content-2 img {
-  position: absolute;
-  width: 300px;
-  height: 300px;
-  margin: 2.4rem 0rem 0rem 4.7rem;
-}
 .content-2 p {
   position: absolute;
   display: inline-block;
   font-size: 1.5rem;
-  margin: 24.5rem 0rem 0rem 19.5rem;
-  background-color: #FFF5FF;
+  margin: 5rem 0rem 0rem 17rem;
+  background-color: #F5FCFF;
   font-weight: 600;
 }
 
 .home .third {
   position: absolute;
   top: 13%;
-  height: 260px;
+  height: 575px;
   width: 500px;
-  margin-left: 70.5rem;
+  margin-left: 35.7rem;
   border: 1px solid black;
+  
 }
 .third .content-3 {
   position: absolute;
   top: 0%;
   width: 465px;
-  align-items: center;
   margin-left: 2rem;
   color: black;
 }
 .content-3 h2 {
   font-size: 1.5rem;
-  padding: 2rem 2rem 0.7rem 0rem;
+  padding: 2rem 2rem 0.8rem 0rem;
   font-weight: 500;
   letter-spacing: 1px;
+}
+h2 span {
+  color: white;
+  background-color: black;
 }
 .content-3 h1 {
   font-size: 2rem;
@@ -247,21 +236,33 @@ h3 span {
   font-size: 1.35rem;
   font-weight: 400;
 }
+h3 i {
+  font-size: 0.8rem;
+}
+h3 span {
+  font-weight: 700;
+}
+.content-3 img {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  margin: 2.4rem 0rem 0rem 4.7rem;
+}
 .content-3 p {
   position: absolute;
   display: inline-block;
   font-size: 1.5rem;
-  margin: 5rem 0rem 0rem 17rem;
-  background-color: #F5FCFF;
+  margin: 24.5rem 0rem 0rem 19.5rem;
+  background-color: #FFF5FF;
   font-weight: 600;
 }
 
 .home .fourth {
   position: absolute;
-  top: 57%;
+  top: 13%;
   height: 260px;
   width: 500px;
-  margin-left: 1rem;
+  margin-left: 70.5rem;
   border: 1px solid black;
 }
 .fourth .content-4 {
@@ -274,7 +275,7 @@ h3 span {
 }
 .content-4 h2 {
   font-size: 1.5rem;
-  padding: 2rem 2rem 0.5rem 0rem;
+  padding: 2rem 2rem 0.7rem 0rem;
   font-weight: 500;
   letter-spacing: 1px;
 }
@@ -294,6 +295,7 @@ h3 span {
   background-color: #F5FCFF;
   font-weight: 600;
 }
+
 .home .fifth {
   position: absolute;
   top: 57%;
