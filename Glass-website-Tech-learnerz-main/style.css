@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    height: 100vh;
+    background: linear-gradient(to right top, rgb(175, 92, 243), rgb(224, 76, 230));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.glass {
+    height: 80vh;
+    width: 80%;
+    background: linear-gradient(to right, rgb(255, 255, 255, 0.3), rgb(255, 255, 255, 0.7));
+    position: fixed;
+    z-index: 3;
+    backdrop-filter: blur(10px);
+}
+
+#image {
+    z-index: 3;
+    position: absolute;
+    right: 10%;
+    bottom: 2%;
+    animation: 5s animate ease-in-out infinite;
+}
+
+@keyframes animate {
+    0% {
+        bottom: 2%;
+    }
+    50% {
+        bottom: 10%;
+    }
+    100% {
+        bottom: 2%;
+    }
+}
+
+.column {
+    background: linear-gradient(to right, rgba(230, 149, 255, 0.3), rgb(247, 163, 255, 0.7));
+    backdrop-filter: blur(10px);
+    z-index: 4;
+    width: 606px;
+    height: 206px;
+    text-align: left;
+    padding-left: 50px;
+    position: absolute;
+    left: 8%;
+    top: 35%;
+    transition: 0.5s ease-in-out;
+    border-radius: 5px;
+}
+
+.column:hover {
+    width: 608px;
+    height: 208px;
+    box-shadow: 0px 0px 20px 3px rgb(224, 76, 230);
+}
+
+.heading {
+    font-size: 50px;
+    font-family: 'Iceland', cursive;
+}
+
+.para {
+    font-size: 19px;
+    font-family: 'Iceberg', cursive;
+}
+
+.navbar {
+    z-index: 4;
+}
+
+ul {
+    background: linear-gradient(to right, rgba(230, 149, 255, 0.3), rgb(247, 163, 255, 0.7));
+    z-index: 4;
+    list-style-type: none;
+    overflow: hidden;
+    position: absolute;
+    top: 6%;
+    left: 6%;
+    width: 810px;
+    height: 70px;
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+}
+
+li {
+    float: left;
+    margin-left: 66px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+li a {
+    text-decoration: none;
+    color: black;
+    font-family: 'Teko', sans-serif;
+    font-size: 34px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 10px;
+}
+
+li a:hover {
+    background: linear-gradient(to right, rgb(255, 255, 255, 0.3), rgb(255, 255, 255, 0.7));
+}
+
+.text {
+    z-index: 4;
+    position: absolute;
+    left: 12%;
+    bottom: 12%;
+    font-family: 'Glass Antiqua', cursive;
+    color: purple;
+    font-size: 25px;
+}
