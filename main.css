@@ -8,22 +8,65 @@
 
 body {
   font-family: "Source Sans Pro", sans-serif;
+  background: linear-gradient(to right top, rgb(64, 210, 247), rgb(175, 233, 243));
 }
 
-/* navigation */
 
+
+/* home */
 .home {
-  display: flex;
   height: 100vh;
   width: 100%;
-  background-image: url(./jpeg/background.jpg);
-  background-size: cover;
   position: relative;
-}
-.home::after {
+  justify-content: center;
+  align-items: center;
   display: flex;
-  background-color: black;
+  
+}
+.home-content {
+  display: flex;
+  height: 75vh;
+  width: 80vw;
+  background: linear-gradient(to right,  rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.7));
+  border-radius: 1rem;
+  backdrop-filter: blur(50px);
+  justify-content: space-around;
+  flex-direction: column;
+  z-index: 3;
+  box-shadow: -1px 1px 4px 0px rgb(61, 223, 252);
+}
+.home-text {
+  
+}
+
+.menu {
   position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  top: 6%;
+  right: 6%;
+  width: 40%;
+  height: 10%;
+  border-radius: 0.5rem;
+  font-size: 2rem;
+  background: linear-gradient(to right,  rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.7));
+  z-index: 4;
+  backdrop-filter: blur(10px);
+  box-shadow: -1px 1px 4px 0px rgb(130, 223, 240);
+  animation: 5s animate ease-in-out infinite;
+}
+
+@keyframes animate {
+    0% {
+        bottom: 2%;
+    }
+    50% {
+        bottom: 10%;
+    }
+    100% {
+        bottom: 2%;
+    }
 }
 
 /* About */
