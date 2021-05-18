@@ -49,6 +49,12 @@ body {
 .head {
   font-size: 5rem;
 }
+.icon {
+  color: black;
+  font-size: 2rem;
+  padding: 0.2rem;
+  vertical-align: middle;
+}
 .image1 {
   position: absolute;
   display: flex;
