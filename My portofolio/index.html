@@ -7,16 +7,26 @@
     <link rel="stylesheet" href="./main.css">
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/69def7e625.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
     <title>Document</title>
 </head>
+
+    <style>
+        body {
+            font-family: 'Ubuntu', sans-serif;
+        }
+    </style>
+
 <body>
 
     <!-- navigation bar -->
-    <section id="nav-bar"  class="nav w-full h-20 flex justify-between items-center z-30  ">
+    <section id="nav-bar"  class="nav w-full h-20 flex justify-between items-center z-30 ">
             
         <!-- side bar btn-->
-        <div>
-            <a id="side-btn" class="hidden md:inline-block cursor-pointer">
+        <div class="flex items-center">
+            <a id="side-btn" class="hidden md:inline-block cursor-pointer leading-4">
                 <i class="fas fa-info-circle text-4xl mr-4"></i>
             </a>
             <a href="#nav" class="text-5xl">
@@ -114,10 +124,19 @@
     </section>
 
     <!-- about -->
-    <section id="about" class="w-full h-screen  flex justify-center items-center z-10  ">
-        
-        <div id="">
-            hi
+    <section id="about" class="w-full h-screen  z-10  ">
+        <div  class="flex justify-center items-center flex-col">
+            <h1 class="text-5xl p-4">About me</h1>
+            <div id="about-content" class="">
+                <div>
+                    
+                </div>
+                <div>
+                    
+                </div>
+
+
+            </div>
         </div>
     </section>
 
