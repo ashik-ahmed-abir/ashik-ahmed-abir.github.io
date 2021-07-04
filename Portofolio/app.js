@@ -26,3 +26,5 @@ menuCloseBtn.addEventListener('click', () => {
 
 // GSAP
 
+gsap.from('body', {duration: 3, opacity: 0, delay: 1});
+gsap.from('#link-collection a', {x: -200, oppacity: 0, duration: 1, delay: 3, stagger: 0.1 });
