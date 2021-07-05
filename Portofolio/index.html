@@ -40,8 +40,8 @@
         <div id="link-collection" class="flex flex-col justify-center items-start">
           <a href="#home" class="nav-link text-2xl pt-4 pb-4 flex justify-center items-center font-light" onclick="closeMenu()"><i class="nav.icon w-10  fas fa-home"></i><span>Home</span></a>
           <a href="#about" class="nav-link text-2xl pt-4 pb-4 flex justify-center items-center font-light" onclick="closeMenu()"><i class="nav.icon w-10  fas fa-user"></i><span>About</span></a>
-          <a href="#resume" class="nav-link text-2xl pt-4 pb-4 flex justify-center items-center font-light" onclick="closeMenu()"><i class="nav.icon w-10  fas fa-envelope"></i> <span>Contact</span></a>
-          <a href="#portfolio" class="nav-link text-2xl pt-4 pb-4 flex justify-center items-center font-light" onclick="closeMenu()"> <i class="nav.icon w-10  fas fa-envelope"></i><span>Contact</span></a>
+          <a href="#contact" class="nav-link text-2xl pt-4 pb-4 flex justify-center items-center font-light" onclick="closeMenu()"><i class="nav.icon w-10  fas fa-envelope"></i> <span>Contact</span></a>
+          <a href="#form" class="nav-link text-2xl pt-4 pb-4 flex justify-center items-center font-light" onclick="closeMenu()"> <i class="nav.icon w-10  fas fa-envelope"></i><span>Contact</span></a>
           <a href="#services" class="nav-link text-2xl pt-4 pb-4 flex justify-center items-center font-light" onclick="closeMenu()"> <i class="nav.icon w-10  fas fa-envelope"></i><span>Contact</span></a>
           <a href="#contact" class="nav-link text-2xl pt-4 pb-4 flex justify-center items-center font-light" onclick="closeMenu()"> <i class="nav.icon w-10  fas fa-envelope"></i><span>Contact</span></a>
 
@@ -74,7 +74,7 @@
 
   <!-- ======= About Section ======= -->
   <section id="about" class="">
-    <div class="ml-80">
+    <div class=" ml-12 xl:ml-80 pt-32 pl-8" >
       <h1 class="text-5xl pt-8 pb-8 font-semibold">About</h1>
       <div>
         <h1>Ashik Ahmed Abir</h1>
@@ -85,6 +85,54 @@
     </div>
     
   </section><!-- End About -->
+
+  <section id="contact">
+    <div id="contact-content" class=" ml-12 xl:ml-80 pt-32 pl-8">
+      <div class="w-60 h-60 bg-yellow-200">
+        <div id="con-logo" class="w-8 h-8 bg-black text-white rounded-xl flex justify-center items-center absolute z-50">
+          <i class="fab fa-facebook-f"></i>
+        </div>
+        <div id="con-text" class="hidden w-44 h-8 bg-black text-white rounded-xl flex justify-center items-center relative">
+          Abir Ahmed
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- Start infoo -->
+
+  <section id="form">
+    <div class="form-container">
+      <form action="formsphree.io" method="POST" id="my-form">
+  
+        <div class="form-group">
+          <label for="firstName"> First Name</label>
+          <input type="text" id="firstName" name="firstName">
+        </div>
+  
+        <div class="form-group">
+          <label for="latsName">Last Name</label>
+          <input type="text" id="lastName" name="lastName">
+        </div>
+  
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email">
+        </div>
+  
+        <div class="form-group">
+          <label for="massage">Massage</label>
+          <textarea name="massage" id="massage" cols="30" rows="10"></textarea>
+        </div>
+  
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+    <div id="status"></div>
+  </section>
+
+  <!-- End infoo -->
 
 
 
