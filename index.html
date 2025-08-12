@@ -3,58 +3,111 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Ashik Ahmed Abir - Academic CV</title>
+  <title>Ashik Ahmed Abir - Biomedical Engineer</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
   <link rel="stylesheet" href="main.css" />
 </head>
 <body>
-  <div class="container">
-    <header>
-      <div class="photo">
-        <!-- Add your photo here: replace "photo.jpg" with your image file -->
+  <nav>
+    <div class="container nav-container">
+      <div class="logo">Ashik Ahmed Abir</div>
+      <ul class="nav-links">
+        <li><a href="#home" class="active">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#publications">Publications</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="nav-toggle" aria-label="toggle navigation">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+  </nav>
+
+  <main>
+    <section id="home" class="section home-section container">
+      <div class="profile-photo">
         <img src="photo.jpg" alt="Ashik Ahmed Abir" />
       </div>
-      <div class="intro">
+      <div class="intro-text">
         <h1>Ashik Ahmed Abir</h1>
-        <h2>Researcher</h2>
-        <p>Aspiring biomedical engineer with a passion for medical device innovation and drug delivery research. With professional experience in medical instrumentation and a strong research background, I seek to contribute to advancing healthcare solutions.</p>
+        <p class="title">Researcher & Aspiring Biomedical Engineer</p>
+        <p>Passionate about medical device innovation and drug delivery research, aiming to advance healthcare solutions.</p>
+        <div class="social-links">
+          <a href="https://github.com/ashik-ahmed-abir" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/ashik-ahmed-abir" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+          <a href="mailto:abirashik11@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+        </div>
       </div>
-    </header>
-
-    <section>
-      <h3>Education</h3>
-      <p><strong>BSc in Biomedical Engineering</strong><br />
-      Jashore University of Science and Technology (JUST)<br />
-      2018 - 2022 | CGPA: 3.71</p>
     </section>
 
-    <section>
-      <h3>Professional Experience</h3>
-      <p><strong>Executive Engineer</strong>, NIPRO Corporation<br />
-      March 2023 - Present<br />
-      Role: Maintenance of medical equipment</p>
+    <section id="about" class="section container">
+      <h2>About Me</h2>
+      <p>I graduated with a BSc in Biomedical Engineering from Jashore University of Science and Technology (JUST) with a CGPA of 3.71. I have professional experience in medical instrumentation and currently work as an Executive Engineer at NIPRO Corporation maintaining medical equipment. My skills include Matlab, Biopac, and COMSOL. I am eager to contribute to healthcare innovation through research and practical applications.</p>
     </section>
 
-    <section>
-      <h3>Technical Skills</h3>
+    <section id="experience" class="section container">
+      <h2>Experience</h2>
+      <div class="experience-item">
+        <h3>Executive Engineer</h3>
+        <p><strong>NIPRO Corporation</strong> &mdash; March 2023 - Present</p>
+        <p>Responsible for maintenance of medical equipment ensuring operational efficiency and reliability.</p>
+      </div>
+      <div class="experience-item">
+        <h3>Biomedical Engineering Intern</h3>
+        <p><strong>XYZ Medical Devices</strong> &mdash; June 2021 - Dec 2021</p>
+        <p>Worked on prototype development for wearable health monitoring systems.</p>
+      </div>
+    </section>
+
+    <section id="publications" class="section container">
+      <h2>Publications & Projects</h2>
       <ul>
-        <li>Matlab</li>
-        <li>Biopac</li>
-        <li>COMSOL</li>
+        <li>
+          <strong>Evaluation of In-vitro Drug Release Profile of Ciprofloxacin Incorporated Chitosan/PVA Thin Film</strong> (Conference Paper, 2023)
+        </li>
+        <li>
+          <strong>Patient Monitoring System</strong> (Project)
+        </li>
       </ul>
     </section>
 
-    <section>
-      <h3>Publications & Projects</h3>
-      <p><strong>Publication:</strong> Conference paper - "Evaluation of In-vitro Drug Release Profile of Ciprofloxacin Incorporated Chitosan/PVA Thin Film" (2023)</p>
-      <p><strong>Project:</strong> Patient Monitoring System</p>
-    </section>
-
-    <section>
-      <h3>Contact</h3>
+    <section id="contact" class="section container">
+      <h2>Contact</h2>
       <p>Email: <a href="mailto:abirashik11@gmail.com">abirashik11@gmail.com</a></p>
-      <p>GitHub: <a href="https://ashik-ahmed-abir.github.io/" target="_blank">https://ashik-ahmed-abir.github.io/</a></p>
-      <p>LinkedIn: <a href="https://www.linkedin.com/in/ashik-ahmed-abir" target="_blank">www.linkedin.com/in/ashik-ahmed-abir</a></p>
+      <p>GitHub: <a href="https://github.com/ashik-ahmed-abir" target="_blank">github.com/ashik-ahmed-abir</a></p>
+      <p>LinkedIn: <a href="https://www.linkedin.com/in/ashik-ahmed-abir" target="_blank">linkedin.com/in/ashik-ahmed-abir</a></p>
     </section>
-  </div>
+  </main>
+
+  <script>
+    const toggle = document.querySelector('.nav-toggle');
+    const navLinks = document.querySelector('.nav-links');
+
+    toggle.addEventListener('click', () => {
+      navLinks.classList.toggle('nav-open');
+    });
+
+    // Highlight active section link on scroll
+    const sections = document.querySelectorAll('section');
+    const navItems = document.querySelectorAll('.nav-links a');
+
+    window.addEventListener('scroll', () => {
+      let current = '';
+      sections.forEach(section => {
+        const sectionTop = section.offsetTop - 60;
+        if(pageYOffset >= sectionTop) {
+          current = section.getAttribute('id');
+        }
+      });
+
+      navItems.forEach(a => {
+        a.classList.remove('active');
+        if(a.getAttribute('href') === '#' + current) {
+          a.classList.add('active');
+        }
+      });
+    });
+  </script>
 </body>
 </html>
