@@ -172,3 +172,102 @@ ul li, ol li {
     max-width: 100%;
   }
 }
+/* Existing CSS remains — add these at the end */
+
+/* Home Page Layout */
+.home-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  align-items: flex-start;
+}
+
+.home-photo {
+  flex: 0 0 250px;
+  text-align: center;
+}
+
+.home-photo img {
+  width: 250px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+}
+
+.home-content {
+  flex: 1;
+}
+
+.tagline {
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 1.5rem;
+}
+
+.two-columns {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin: 1.5rem 0;
+}
+
+.two-columns section {
+  flex: 1;
+}
+
+.two-columns h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.edu-list li {
+  margin-bottom: 0.8rem;
+}
+
+.social-links {
+  display: flex;
+  gap: 1rem;
+  font-size: 1.5rem;
+  margin: 1.5rem 0;
+}
+
+.social-links a {
+  color: #007acc;
+  transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+  color: #004f80;
+}
+
+.resume-btn {
+  display: inline-block;
+  background: black;
+  color: white;
+  padding: 0.7rem 1.5rem;
+  font-weight: 600;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: background 0.3s ease;
+}
+
+.resume-btn:hover {
+  background: #333;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .home-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .two-columns {
+    flex-direction: column;
+  }
+  .home-photo {
+    flex: 0 0 auto;
+  }
+}
+
