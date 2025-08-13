@@ -84,20 +84,20 @@ footer {
   margin-bottom: 2rem;
 }
 
-.home-photo {
+/* .home-photo {
   flex: 0 0 180px;
   border-radius: 50%;
   overflow: hidden;
   box-shadow: 0 4px 10px rgba(0,0,0,0.15);
-}
+} */
 
-.home-photo img {
+/* .home-photo img {
   width: 180px;
   height: 180px;
   object-fit: cover;
   display: block;
   border-radius: 50%;
-}
+} */
 
 .home-intro {
   flex: 1 1 300px;
@@ -270,4 +270,5 @@ ul li, ol li {
     flex: 0 0 auto;
   }
 }
+
 
