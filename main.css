@@ -54,6 +54,10 @@ body{
   width:300px; height:auto; display:block;
   border-radius:10px; box-shadow:0 10px 30px rgba(0,0,0,.08);
 }
+.photo1 img{
+  width:150px; height:100px; display:block;
+  border-radius:10px; box-shadow:0 10px 30px rgba(0,0,0,.08);
+}
 .name{font-size:34px; font-weight:800; letter-spacing:.2px}
 .role{font-size:20px; color:#222; margin-top:-4px}
 .role2{font-size:20px; color:#222; margin-top:-6px}
@@ -118,3 +122,4 @@ h3{font-size:22px; margin:0 0 8px}
   .r-col .logo-box{margin-left:0}
   .cv-btn{margin-left:0}
 }
+
